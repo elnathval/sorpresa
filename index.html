@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+    <!--Homosexual quien lo lea Xb-->
+    <head>
+        <title>Para Diluk &#60;3</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <p id="mymarker" style="margin-bottom: 2.5%; margin-left: 2.5%; margin-right: 2.5%;">Hola</p>
+            <button id="mybutton" style="margin-bottom: 2.5%; margin-left: 2.5%;">Siguiente</button>
+        </header>
+        <script>
+            var button1 = document.getElementById("mybutton")
+            var marker = document.getElementById("mymarker")
+            var page=0;
+            const texto = ["Hola Diluk", "Como estas?", "Ya llevamos un poquito de tiempo juntos &#60;3", "Y pues se me ha ocurrido la idea de", "Contar como me siento al estar contigo.", "La primera vez que me enamoré de ti me sentí raro", "Aunque al no haber pasado por algo así antes era normal.", "Te conocí de una manera irregular, ya que fue gracias a TUS ESTADOS INTRUSIVOS que lo hice.","Desde ahí, comenzó lo que puede ser una amistad un poco rara entre nosotros.", "Aunque después nos peleamos por los estados (bruh)", "E ironicamente, uno de los factores de mi enamoramiento fue eso", "Creo que después de eso gracias a ALGUIEN me leí dos capitulos de yaoi,", "Y pues mira como he acabado.", "Me acuerdo que cuando hiciste una confesión (sigo sin saber si era verdadera o falsa)","Que yo estaba todo rayado y sospechando porque ya no confiaba en nadie.","Y tambien me acuerdo que no podía ni acercarme ni 10 metros de ti","Porque me ponía MUY nervioso (es obvio duh)","Por diciembre-febrero estuvimos un poco callado y no me acuerdo porque sorry","Para aclarar las cosas ahora: ya me dejaste de gustar por aqui creo","El caso es que no pasaba mucho hasta verano (donde si no fuera por lo que diré despues hubiera sido perfecto)","Me encantó poder jugar contigo y con ata fue divertido","JKFADFSFAH","Despues estaba el grupo donde (se suponia) jugabamos al gartic con ximo, sheyla, nerea, Laura, Victoria", "No se si alex pero bueno, ahí tengo un mal recuerdo que no entiendo como sucedio y sigo","Arrepintendome por eso.","Ahora en el insti, la verdad me hubiera gustado mucho haber estado en tu clase cuando pusieron las clases","Y ahí todo bien creo hasta que BOOM", "Me vuelves a gustar de manera terrible, en serio no entiendo como.","Y de ahí empecé a gustarte otra vez y estamos aquí, juntos.","Me has llenado por dentro espiritualmente y mentalmente, tu presencia ya me alegra el día","No se describirte como me siento ahora mismo, es una sensacion rara, pero me gusta","Y lo único que deseo es que dure bastante","GRACIAS DILUK! TE QUIERO MUCHO <3"]
+        
+            button1.onclick = function(){
+                page++;
+                var pagent;
+                if(page!==pagent){
+                    if(page<=34){
+                        marker.innerHTML = texto[page]
+                        pagent = page;
+                        
+                    }
+                    if(page==32){
+                        button1.disabled = true
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
